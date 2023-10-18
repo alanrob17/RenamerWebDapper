@@ -6,7 +6,7 @@ It has one table and one stored procedure to allow SQL Server to consume data.
 
 ## Original data format
 
-The data is in the followig format in a text file.
+The data is in the following format in a text file.
 
 ```bash
     08-22 - Glasgow/20230822_065642.jpg
