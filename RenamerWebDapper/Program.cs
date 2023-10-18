@@ -21,14 +21,16 @@ namespace RenamerWebDapper
             
             foreach (string line in lines)
             {
-                Photo photo = new();
-    
-                var iposn = line.IndexOf(@"/"); 
-                photo.Name = line.Substring(iposn + 1); 
-                photo.Folder = line.Substring(0, iposn);
-                photo.Description = string.Empty;
-                photo.Image = $"/images/{line}";
-            
+                var iposn = line.IndexOf(@"/");
+
+                Photo photo = new Photo
+                {
+                    Name = line.Substring(iposn + 1),
+                    Folder = line.Substring(0, iposn),
+                    Description = string.Empty,
+                    Image = $"/images/{line}",
+                };
+
                 AddPhoto(photo);
             }
 
